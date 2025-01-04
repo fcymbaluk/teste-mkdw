@@ -7,9 +7,6 @@
 #'    keep_md: true
 #'---
 
-#+ r setup, include = FALSE
-knitr::opts_chunk$set(echo = TRUE)
-
 #'## R Markdown
 
 #'This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
@@ -27,3 +24,15 @@ summary(cars)
 plot(pressure)
 
 #'Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+#' Here's some prose in a very special comment. Let's summarize the built-in
+#' dataset `VADeaths`.
+# here is a regular code comment, that will remain as such
+summary(VADeaths)
+
+#' Here's some more prose. I can use usual markdown syntax to make things
+#' **bold** or *italics*. Let's use an example from the `dotchart()` help to
+#' make a Cleveland dot plot from the `VADeaths` data. I even bother to name
+#' this chunk, so the resulting PNG has a decent name.
+#+ dotchart
+dotchart(VADeaths, main = "Death Rates in Virginia - 1940")
