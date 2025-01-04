@@ -9,3 +9,21 @@ summary(VADeaths)
 #' this chunk, so the resulting PNG has a decent name.
 #+ dotchart
 dotchart(VADeaths, main = "Death Rates in Virginia - 1940")
+
+#' Some work in progress
+
+
+#' More work in progress
+
+
+# More work
+
+# More, more, more
+
+
+# And more
+
+# Work finished
+
+# Back to the work in progress
+# Done
